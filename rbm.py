@@ -17,7 +17,7 @@ def boltzmannProbs(W, x):      # RETURNS THE PROBABILITY OF A NODE BEING ON
     return P_on
 
 
-def trainPriorBias(hids):
+def trainPriorBias(hids):      # SEEMS TO CONCATENATE AND NORMALISE THE HIDDEN UNIT VALUES
     p_null_row = mean(addBias(hids),0)   #include predicting 1, as a checksum!
     idx=where(p_null_row==0)                  #tweak to avoid Inf, Nans etc
     p_null_row[idx]=0.00000000123666123666
