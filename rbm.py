@@ -1,10 +1,12 @@
 import numpy as np
 from path import *
 
+##### CAPS ARE NOTES BY M.EVANS
+
 ############################### hintonian stuff starts here
 
 
-def boltzmannProbs(W, x):
+def boltzmannProbs(W, x):      # RETURNS THE PROBABILITY OF A NODE BEING ON
     E_on  = -np.dot(W,x)       #penalty is the negative of the reward (just to make it look like energy)
     E_off = 0.0*E_on
 
