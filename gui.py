@@ -1,5 +1,5 @@
 import matplotlib
-matplotlib.use('Agg')
+#matplotlib.use('Agg')
 import numpy as np
 from location import Location
 from cffun import cf_beta

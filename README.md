@@ -3,7 +3,7 @@ hclearn
 
 Unitary coherent hippocampus model code, created by Charles Fox and Alan Saul and edited by Mathew Evans
 
-Below are notes on how I (M.E.) understand what the code does.
+Below are notes on how I (M.E.) understand what the code does. This document has now been superseeded by the notebook, but a detailed list of functions might stay here.
 
 
 rbm.py : Restricted Boltzmann Machine code, based on Hinton's TRBM work. Includes a number of functions for building the network, setting observed and hidden units, training weights and measuring the 'Energy'. 

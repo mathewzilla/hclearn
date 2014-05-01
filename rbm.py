@@ -1,7 +1,7 @@
 import numpy as np
 from path import *
 
-##### CAPS ARE NOTES BY M.EVANS
+##### CAPS ARE NOTES BY M.EVANS. Notes are now in README.md or the hclearn notebook
 
 ############################### hintonian stuff starts here
 
