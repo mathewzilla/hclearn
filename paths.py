@@ -5,7 +5,8 @@ from DGStateAlan import DGState, smartCollapse
 #Senses, makeMaze
 
 #A path is a log of random walk locations and sensations.
-class Path:
+#CHANGED FROM PATH TO PATHS AS IPYTHON DOESN'T LIKE FILES/DIRS CALLED PATH
+class Paths:
     
     def __init__(self, dictNext, N_mazeSize, T_max):
         self.N_mazeSize = N_mazeSize

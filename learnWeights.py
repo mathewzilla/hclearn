@@ -1,6 +1,6 @@
 import numpy as np
 from makeMaze import *
-from path import *
+from paths import * 
 from cffun import *
 from rbm import *
 import DGStateAlan

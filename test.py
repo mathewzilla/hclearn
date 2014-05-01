@@ -3,7 +3,7 @@ import numpy as np
 import pdb
 
 from makeMaze import *
-from path import *
+from paths import *
 
 from cffun import *
 

@@ -66,8 +66,9 @@ def plotResults(path, hist, dictGrids, b_useNewDG, learningRate, note=""):
 
     b_losts = (np.sum(xys_bel!=path.posLog[:,0:2], 1)!=0)
     
-    str = "Results/run_"+hist.str_title+"LR_%d_DG_%s_%s.eps" % (learningRate*1000, b_useNewDG, note)
-    plt.savefig(str)
+    # COMMENTED OUT SAVING AS THE PATH IS BUGGY IN NOTEBOOK 
+    #str = "Results/run_"+hist.str_title+"LR_%d_DG_%s_%s.eps" % (learningRate*1000, b_useNewDG, note)
+    #plt.savefig(str)
 
     return (b_losts, xys_bel)
 
@@ -100,8 +101,9 @@ def plotErrors(hist1, hist2, hist3, lost1, lost2, lost3, learningRate, subTest =
         ti = "Denoised vs input sensor discrepencies\nDG: %s learningRate: %f" % (surfTest, learningRate )
         plt.title(ti)
         figName = "Results/err_senses_LR%d_DG%s_%s" % (learningRate*1000, surfTest, note)
-        plt.savefig(figName+".eps")
-        np.save(figName, np.vstack((np.array(means), np.array(sigmas))))
+       # COMMENTED AS RELATIVE PATHS HAVEN'T BEEN SORTED
+       # plt.savefig(figName+".eps")
+       # np.save(figName, np.vstack((np.array(means), np.array(sigmas))))
 
     if surfTest:
         #ALAN history files now have a ca1s attribute which are CA1State objects so hist1.ca1s[mapStep].surfs will give the cleaned up surf features

@@ -5,7 +5,7 @@ import numpy as np
 from hcq import *
 from gui import *
 from location import *
-from path import *
+from paths import * #CHANGED AS IPYTHON DOESN'T LIKE FILES/DIRS CALLED PATH
 from makeMaze import makeMaze
 from os import sys
 import learnWeights
@@ -32,7 +32,7 @@ b_inference=True
 
 [dictSenses, dictAvailableActions, dictNext] = makeMaze(N_mazeSize, b_useNewDG)     #make maze, including ideal percepts at each place
 dictGrids = DictGrids()
-path = Path(dictNext,N_mazeSize, T)          #a random walk through the maze -- a list of world states (not percepts)
+path = Paths(dictNext,N_mazeSize, T)          #a random walk through the maze -- a list of world states (not percepts)
 
 (ecs_gnd, dgs_gnd, ca3s_gnd) = path.getGroundTruthFirings(dictSenses, dictGrids, N_mazeSize)  #ideal percepts for path, for plotting only
 

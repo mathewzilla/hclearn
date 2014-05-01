@@ -1,5 +1,5 @@
 import numpy as np
-from path import *
+from paths import *
 
 ##### CAPS ARE NOTES BY M.EVANS. Notes are now in README.md or the hclearn notebook
 
