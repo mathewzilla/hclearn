@@ -7,7 +7,9 @@ import unittest
 import re
 import makeMaze as mm
 
-rootFolder = "/Users/alansaul/Work/CompSci/SURE/hclearn_alan/"
+#rootFolder = "/Users/alansaul/Work/CompSci/SURE/hclearn_alan/"
+rootFolder = "/Users/mathew/work/hclearn/"
+
 #This is the folder being used by makeSURFRepresentation to create the surf features for learnWeights
 prefixFolder = rootFolder + "DCSCourtyard/"
 

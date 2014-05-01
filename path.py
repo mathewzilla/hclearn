@@ -1,4 +1,3 @@
-
 from cffun import *
 from makeMaze import Senses
 from location import Location
