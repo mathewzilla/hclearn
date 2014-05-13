@@ -77,9 +77,9 @@ def makeMaze(n, b_useNewDG=False):
         print("Generating SURF representations...")
         surfDict = makeSURFRepresentation()
         print("SURFDICTKEYS:%s" % surfDict.keys())
-    dictSenses=dict()
-    dictAvailableActions=dict()
-    dictNext=dict()
+    dictSenses=dict()           # sensory info for a given location 
+    dictAvailableActions=dict() # available actions for a given location
+    dictNext=dict()             # where you would end up next having taken a given action (M.E. I think!)
     step_xs =  [1, 0, -1,  0]   #converts ith angles into x,y vector headings
     step_ys =  [0, 1,  0, -1]
 

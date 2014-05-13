@@ -110,6 +110,7 @@ if b_plot:
     #clf()
     show()
 
+    
     b_other = False
     if b_other:
         print "close the first plus maze window to begin the slideshow of place fields!"
